@@ -1,0 +1,110 @@
+@import "../../../color-variables.scss";
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+
+.main-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  span{
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 20px;
+    color: $secondary-text;
+    text-transform: uppercase;
+  }
+
+  h1{
+    font-family: Roboto;
+    font-weight: 900;
+    line-height: 79.2px;
+    font-size: 72px;
+    color: $primary-text;
+  }
+
+}
+
+.benefit-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+
+  .benefit-data{
+
+    border-bottom: 10px solid $secondary-color;
+    padding-bottom: 40px;
+
+    h2{
+      font-family: Roboto;
+      font-weight: 600;
+      font-size: 60px;
+      line-height: 70.31px;
+    }
+
+  }
+
+
+  p{
+    font-family: Poppins;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 60px;
+
+    b{
+      background: -webkit-linear-gradient(45deg, $secondary-color, $light-primary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+  }
+}
+
+.talk-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefit-cards-section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+}
+
+.sub-section{
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70.31px;
+  text-align: center;
+
+  div{
+    margin-top: 49px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .main-section{
+    flex-direction: row;
+  }
+
+  .benefit-section{
+    flex-direction: row;
+  }
+
+  .benefit-cards-section{
+    flex-direction: row;
+  }
+}

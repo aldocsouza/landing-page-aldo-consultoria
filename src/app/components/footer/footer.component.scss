@@ -1,0 +1,17 @@
+footer{
+  display: flex;
+  font-family: Poppins;
+  justify-content: space-between;
+  padding: 77px 100px;
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .redes{
+    display: flex;
+    gap: 10%;
+  }
+
+}

@@ -1,0 +1,38 @@
+@import "../../../color-variables.scss";
+
+.btn{
+  padding: 20px 40px;
+  border-radius: 30px;
+  border: none;
+  font-family: Poppins;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:disabled{
+    opacity: 0.6;
+    cursor: default;
+  }
+
+  &.primary{
+    background-image: linear-gradient($primary-color, $secondary-color);
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+  }
+
+  &.secondary{
+    background-color: white;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+}
+
+.btn-primary:hover{
+  background-image: linear-gradient( rgb(143, 106, 243), #351686);
+}
+
+.btn-primary:active{
+  background-image: linear-gradient($primary-color, $secondary-color);
+}
